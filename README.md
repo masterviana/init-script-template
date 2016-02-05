@@ -63,6 +63,19 @@ Tells you whether the app is running. Exits with _0_ if it is and _1_
 otherwise.
 
     /etc/init.d/algorithms status
+    
+### Add script to boot  ###
+
+Allow the script to be executed when system goes down or come up
+
+    sudo  update-rc.d algorithms defaults
+    
+### Remove script from boot  ###
+
+Remove init script from boot
+
+    sudo update-rc.d -f  algorithms remove
+
 
 Logging
 -------
